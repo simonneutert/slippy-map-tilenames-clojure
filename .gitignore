@@ -1,3 +1,7 @@
+
+# Created by https://www.gitignore.io/api/emacs,clojure
+
+### Clojure ###
 /target
 /classes
 /checkouts
@@ -13,3 +17,68 @@ pom.xml.asc
 .hg/
 .lsp/
 .clj-kondo/
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+
+# End of https://www.gitignore.io/api/emacs,clojure
+/clj-kondo
+/.clj-kondo
+**/.clj-kondo/.cache
+performance.txt
+clj-kondo*.snap
+.planck_cache
+
+.DS_Store
+!corpus/**/*.jar
+lsp
+corpus/config_dir/.cache
+/.clj-kondo/clj-kondo
+/.lsp/
+clj-kondo.build_artifacts.txt
+/.clj-kondo/rewrite-clj
