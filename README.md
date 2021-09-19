@@ -1,14 +1,17 @@
 # slippy
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to calculate slippy tilenames from gps coordinates and the other way round.
+
+see https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames
 
 ## Usage
 
-FIXME
+`{:deps
+ {io.github.simonneutert/slippy-map-tilenames-clojure {:git/tag "v0.0.1" :git/sha "ec751e8"}}}`
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Simon Neutert
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
