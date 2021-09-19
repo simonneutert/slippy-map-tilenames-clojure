@@ -1,0 +1,21 @@
+(ns slippy.core-test
+  (:require [clojure.test :refer :all]
+            [slippy.core :refer :all]))
+
+(deftest slippy-test
+  (testing "Slippy Tile for zoom 14"
+    (is
+     (=
+      (latlng2tile 50 8 14)
+      {:zoom 14 :tilex 8556 :tiley 5556}))))
+
+(deftest slippy-test-reverse
+  (testing "Lat Lng from slippy zoom 14"
+    (is
+     (and
+      (=
+       (int (:lat (tile2latlng 8556 5556 14)))
+       50)
+      (=
+       (int (:lng (tile2latlng 8556 5556 14)))
+       7)))))
